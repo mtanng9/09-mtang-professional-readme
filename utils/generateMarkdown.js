@@ -55,8 +55,11 @@ ${data.description}
   
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Questions](#questions)
 - [License](#license)
+- [How To Contribute](#how-to-contribute)
+- [Tests](#tests)
+
 
 ## Installation
 
@@ -66,11 +69,11 @@ ${data.install}
 
 ${data.usage}
 
-## Credits
+## Questions
 
-${data.username}
+[${data.username}](https://github.com/${data.username})
 
-${data.email}
+Please email me at ${data.email} for any addiional question that are not covered my this README
 
 ## License
 
