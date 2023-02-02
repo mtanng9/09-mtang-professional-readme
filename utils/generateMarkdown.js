@@ -4,11 +4,30 @@ function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch (license) {
+    case 'Academic Free License v3.0':
+      return `[${license}](https://choosealicense.com/licenses/afl-3.0/)`;
+    case 'MIT':
+      return `[${license}](https://choosealicense.com/licenses/mit/)`;
+    case 'Open Software License 3.0':
+      return `[${license}](https://choosealicense.com/licenses/osl-3.0/)`;
+    case 'Mozilla Public License 2.0':
+      return `[${license}](https://choosealicense.com/licenses/mpl-2.0/)`;
+    default:
+      return ""
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === "") {
+    return ""
+  } else {
+    return `Licensed under the ${renderLicenseLink(license)} license` 
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -41,16 +60,8 @@ ${data.email}
 
 ## License
 
-${data.license}  
+${renderLicenseSection(data.license)}  
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ## How to Contribute
 
