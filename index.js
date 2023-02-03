@@ -60,8 +60,6 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        console.log("Here are your answers");
-        console.log(JSON.stringify(answers, null, ' '));
         let readme = genMarkdown(answers);
         console.log(readme);
     })

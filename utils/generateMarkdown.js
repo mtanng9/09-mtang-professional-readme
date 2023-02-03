@@ -78,7 +78,6 @@ Please email me at ${data.email} for any addiional question that are not covered
 ## License
 
 ${renderLicenseSection(data.license)}  
----
 
 ## How to Contribute
 
