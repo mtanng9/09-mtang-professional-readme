@@ -19,6 +19,9 @@ This is a console application to generate a README.md file from the users input 
 
 Clone repo locally, cd into root folder, run node index.js
 
+[Untitled_ Feb 2, 2023 9_17 PM.webm](https://user-images.githubusercontent.com/118089627/216498968-c934dd5b-4f74-44cc-878d-2319c796d8c0.webm)
+
+
 ## Usage
 
 Use to generate a README.md file
